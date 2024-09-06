@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-how2use.css">
+    <title>How to use</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <a href="https://m10.az/" target="_blank">
+                <img src="https://static.tildacdn.com/tild6263-6436-4064-b637-633061366565/M10.svg" class="logo">
+            </a>
+            <div class="menu-box">
+                <a class="home-btn" href="index.html">Home</a>
+                <button class="menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 30 30">
+                        <path
+                            d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z">
+                        </path>
+                    </svg>
+                </button>
+                <div class="menu-content">
+                    <div class="logo">
+                        <a href="https://m10.az/" target="_blank">
+                            <img src="https://static.tildacdn.com/tild6263-6436-4064-b637-633061366565/M10.svg"></a>
+                        <div class="sml-line"></div>
+                        <button class="menu-closer-svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30"
+                                viewBox="0 0 50 50">
+                                <path
+                                    d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                    <hr>
+                    <div class="links">
+                        <ul>
+                            <li><a href="https://m10.az/" target="_blank">M10 Rəsmi səhifəsi</a></li>
+                            <li><a href="http://m10form.rf.gd" target="_blank">Home</a></li>
+                            <li><a href="how2use.html">İstifadə qaydası</a></li>
+                        </ul>
+                    </div>
+                    <footer>Farid Humbatov   |   Elton Eynullayev</footer>
+                </div>
+                <div class="menu-closer"></div>
+            </div>
+        </header>
+        <main>
+            <div class="section1">
+                <h1>İstifadə qaydaları</h1>
+                <div class="item leader-name-use">
+                    <p class="primary">İlk olaraq Team Leader boşluğunu doldurun (İlk soyad yazılmalıdır) <br> Soyad və ad Azərbaycan əlifbası ilə yazılmalıdır.</p>
+                    <p>Nümunə: <span>Əliyev Adil</span></p>
+                </div>
+                <div class="item leader-number-use">
+                    <p class="primary">Daha sonra Team Leader in nömrəsini yazın.</p>
+                    <p>Nümunə: <span>994708145401</span></p>
+                </div>
+                <div class="item mus-number-use">
+                    <p class="primary">Digər boşluqa isə müştərilərin nömrələrini daxil edin</p>
+                    <p class="secondary">Müştərilərin nömrələrini aralarında boşluq qoyaraq bir bir daxil edin</p>
+                    <p>Nümunə: <span>994507731701 994998481220 994708089818</span></p>
+                </div>
+                <div class="item date-use">
+                    <p class="primary">Əgər müştəri ödənişi bu gün etməyibsə və tarixi dəyişmək istəyirsizsə tarixi dəyiş yazısına toxunub müştərinin ödəniş etdiyi tarixi seçə bilərsiz. <br> Əgər tarixi dəyişməsəniz tarix olaraq bu gün qeyd ediləcək.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var menuButton = document.querySelector('.menu');
+            var menuContent = document.querySelector('.menu-content');
+            var menuCloser = document.querySelector('.menu-closer');
+            var menuCloserSvg = document.querySelector('.menu-closer-svg');
+            var menuCloserBtn = document.querySelector('.sml-line');
+
+            function showMenu() {
+                menuContent.style.display = 'flex';
+                menuCloser.style.display = 'block';
+            }
+
+            function hideMenu() {
+                menuContent.style.display = 'none';
+                menuCloser.style.display = 'none';
+            }
+
+            menuButton.addEventListener('click', showMenu);
+            menuCloser.addEventListener('click', hideMenu);
+            menuCloserSvg.addEventListener('click', hideMenu);
+            menuCloserBtn.addEventListener('click', hideMenu);
+        });
+    </script>
+</body>
+
+</html>

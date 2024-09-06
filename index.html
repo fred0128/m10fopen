@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo-img.png" type="image/x-icon">
+    <title>M10 Auto Hesabat</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="https://static.tildacdn.com/tild6263-6436-4064-b637-633061366565/M10.svg" class="logo">
+            <div class="menu-box">
+                <a class="how2use-btn" href="how2use.html">?</a>
+                <button class="menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 30 30">
+                        <path
+                            d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z">
+                        </path>
+                    </svg>
+                </button>
+                <div class="menu-content">
+                    <div class="logo">
+                        <img src="https://static.tildacdn.com/tild6263-6436-4064-b637-633061366565/M10.svg">
+                        <div class="sml-line"></div>
+                        <button class="menu-closer-svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30"
+                                viewBox="0 0 50 50">
+                                <path
+                                    d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                    <hr>
+                    <div class="links">
+                        <ul>
+                            <li><a href="http://m10form.rf.gd" target="_blank">Home</a></li>
+                            <li><a href="how2use.html">İstifadə qaydası</a></li>
+                        </ul>
+                    </div>
+                    <footer>
+                        <p>Farid Humbatov   |   Elton Eynullayev</p>
+                    </footer>
+                </div>
+                <div class="menu-closer"></div>
+            </div>
+        </header>
+        <main>
+            <form id="myForm">
+                <input type="text" id="leader-name" class="leader-name" name="leader-name"
+                    placeholder="Team liderin soyadı və adı" title="İlk soyad yazılmalıdır. Nümunə: Əliyev Adil"
+                    required>
+                <input type="text" id="leader-number" class="leader-number" name="leader-number"
+                    placeholder="Team liderin mobil nömrəsi" inputmode="numeric" minlength="12" maxlength="12"
+                    title="Nümunə: 994708145414" a required>
+                <textarea name="musnom" id="musnom" class="musnom" rows="3" inputmode="numeric"
+                    placeholder="Müştəri nömrələrini daxil edin"
+                    title="Zəhmət olmasa nömrələri doğru daxil etdiyinizdən əmin olun. Nümunə: 994708145414"
+                    required></textarea>
+                <div class="date-box">
+                    <label for="checkdate">
+                        <input type="checkbox" name="checkdate" id="checkdate">    <p>Tarixi dəyiş</p></label>
+                    <input type="date" id="datepicker" name="datepicker" title="Tarixi seçin" required disabled>
+                </div>
+                <div class="btn-box">
+                    <input type="submit" value="Göndər" title="Məlumatları göndər" class="sub-btn">
+                    <button type="reset" title="Formu təmizlə">Təmizlə</button>
+                </div>
+            </form>
+        </main>
+        <div class="iframe-box">
+            <div class="inp-box-frame">
+                <input type="checkbox" name="showframe" id="showframe" value="show_iframe">
+                <label for="showframe">show_iframe</label>
+            </div>
+            <div id="iframeContainer"></div>
+        </div>
+        <div id="messageContainer"></div>
+    </div>
+
+    <script src="orginal.js"></script>
+</body>
+
+</html>
